@@ -255,8 +255,9 @@ body {
 .about-us .text .div4 p:hover {
     transition: color 0.5ms ease;
     color: white;
-    text-transform: capitalize;
-    font-size: 18px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.747);
+    box-shadow: 6px 6px 5px black;
 }
 
 .about-us .pic {
@@ -270,8 +271,57 @@ body {
 
 .team{
     width: 100%;
-    height: 300px;
-    background-color: brown;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .lSide{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid green;
+}
+
+.team .lSide .tr1{
+    width: 100%;
+    height: 10%;
+    background-color: red;
+}
+.team .lSide .tr2{
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+}
+.team .lSide .tr3{
+    width: 100%;
+    height: 60%;
+    background-color: yellow;
+}
+.team .lSide .tr4{
+    width: 100%;
+    height: 10%;
+    background-color: green;
+}
+
+
+.team .rSide{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.team .rSide img {
+    width: 70%;
 }
 
 .company-news{
