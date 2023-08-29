@@ -285,30 +285,61 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid green;
 }
 
 .team .lSide .tr1{
     width: 100%;
     height: 10%;
-    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    padding: 0px 10px;
+    text-transform: uppercase;
 }
 .team .lSide .tr2{
     width: 100%;
     height: 20%;
-    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.685);
 }
 .team .lSide .tr3{
     width: 100%;
-    height: 60%;
-    background-color: yellow;
+    height: 55%;
+    padding: 0px 10px;
+}
+
+.team .lSide .tr3 p {
+    margin-bottom: 15px;
 }
 .team .lSide .tr4{
     width: 100%;
-    height: 10%;
-    background-color: green;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 10px;
 }
 
+.team .lSide .tr4 p {
+    background: rgba(0, 0, 0, 0.815);
+    color: rgba(255, 255, 255, 0.719);
+    padding: 10px 30px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 6px 6px 9px black;
+    margin-left: 90px;
+    border-radius: 10px;
+}
+
+.team .lSide .tr4 p:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.747);
+    box-shadow: 6px 6px 5px black;
+}
 
 .team .rSide{
     height: 100%;
