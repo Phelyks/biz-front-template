@@ -365,6 +365,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden; /* Check this later */
 }
 
 .company-news .sec1{
@@ -381,21 +382,48 @@ body {
 }
 .company-news .sec2{
     width: 100%;
-    height: 85%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: rgba(255, 255, 0, 0.13);
+    /* overflow: auto; */
     overflow-x: scroll;
-    display: inline-flex;
+    white-space: nowrap;
+    /* display: inline-flex; */
 }
 
 .company-news .sec2 .newsportal{
     height: 100%;
+    width: 100%;
+    margin: 0px 40px;
     border: 1px solid black;
-    width: 300px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: -6px 4px 8px rgba(145, 8, 8, 0.589);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.newsportal .heading{
+    height: 15%;
+    width: 100%;
+}
+
+.newsportal #date {
+    height: 10%;
+    width: 100%;
+}
+
+.newsportal .content {
+    height: 75%;
+    width: 250px;
+    overflow-y: scroll;
+}
+
 
 .grow-biz {
     width: 100%;

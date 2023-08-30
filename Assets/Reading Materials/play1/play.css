@@ -1,0 +1,23 @@
+/* scrollbar width */
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar Track */
+body::-webkit-scrollbar-track {
+    background: pink;
+    border-radius: 5px;
+}
+
+/* Scrollbar Handle */
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 50px;
+    outline: 5px solid white;
+}
+
+/* Scrollbar handle on Hover */
+body::webkit-scrollbar-thumb:hover {
+    background: #555;
+}
