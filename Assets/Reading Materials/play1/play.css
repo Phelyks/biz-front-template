@@ -1,7 +1,35 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #555;
+}
+
+body {
+    width: 85%;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 7px -10px 14px black;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 2px - 4px 4px black;
+    font-family: monospace;
+}
+
+p {
+    margin: 30px 0px;
+    font-family: monospace;
+}
+
 /* scrollbar width */
 
 body::-webkit-scrollbar {
-    width: 10px;
+    width: 20px;
 }
 
 /* Scrollbar Track */
@@ -13,11 +41,19 @@ body::-webkit-scrollbar-track {
 /* Scrollbar Handle */
 body::-webkit-scrollbar-thumb {
     background: #888;
-    border-radius: 50px;
-    outline: 5px solid white;
+    border-radius: 30px;
+    /* outline: 1px solid white; */
 }
 
 /* Scrollbar handle on Hover */
 body::webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #aa5757;
+}
+
+body #play2 {
+    width: 70%;
+}
+
+body #play2 p {
+    font-family: 'Times New Roman', Times, serif;
 }
