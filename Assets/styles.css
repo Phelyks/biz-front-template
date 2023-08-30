@@ -155,10 +155,11 @@ body {
 .brandbox .content2 p:hover {
     /* transition: color 0.5ms ease; */
     cursor: pointer;
-    font-size: 27px;
-    padding: 10px 35px;
+    font-size: 25px;
+    padding: 10px 25px;
     columns: white;
-    text-shadow: 2px 3px 4px black;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.623);
 }
 
 .believe-box {
@@ -276,6 +277,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 .team .lSide{
@@ -358,7 +361,40 @@ body {
 .company-news{
     width: 100%;
     height: 500px;
-    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-news .sec1{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.company-news .sec2{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 0, 0.13);
+    overflow-x: scroll;
+    display: inline-flex;
+}
+
+.company-news .sec2 .newsportal{
+    height: 100%;
+    border: 1px solid black;
+    width: 300px;
 }
 
 .grow-biz {
