@@ -16,17 +16,19 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #333;
+    background-color: #33333377;
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #e0b6b6;
+    background-color: #242222c5;
 }
 
 body::-webkit-scrollbar-track {
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.384);
     border-radius: 10px;
+    margin-block: 5px;
+    margin-inline: 0px;
 }
 
 /* ******** Navigation Block ************** */
@@ -51,7 +53,7 @@ body::-webkit-scrollbar-track {
 }
 
 .navbar .bizLogo img {
-    width: 150px;
+    width: 200px;
     padding: 10px;
     margin-left: 20px;
     cursor: pointer;
@@ -423,18 +425,18 @@ body::-webkit-scrollbar-track {
 }
 
 .company-news .sec2::-webkit-scrollbar-thumb {
-    background-color:rgba(0, 0, 0, 0.555);
+    background-color:rgba(0, 0, 0, 0.164);
     border-radius: 10px;
 }
 
 .company-news .sec2::-webkit-scrollbar-thumb:hover {
-    background-color:rgba(0, 0, 0, 0.712);
+    background-color:rgba(0, 0, 0, 0.507);
 }
 
 .company-news .sec2::-webkit-scrollbar-track {
-    background-color: rgba(180, 164, 164, 0.301);
+    background-color: rgba(180, 164, 164, 0.158);
     border-radius: 10px;
-    margin-inline: 15px;
+    margin-inline: 10px;
 }
 
 /* End of Sec2 scrollbar customization */
@@ -522,7 +524,7 @@ body::-webkit-scrollbar-track {
 .grow-biz {
     width: 100%;
     height: 400px;
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
 }
 footer{
     width: 100%;
