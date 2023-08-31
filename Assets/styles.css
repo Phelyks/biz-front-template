@@ -601,6 +601,7 @@ body::-webkit-scrollbar-track {
 }
 
 .grow-biz .avatarSpace .avatars .img #linkedin {
+    position: relative;
     width: 230px;
     border-radius: 50%;
     background: rgba(128, 128, 128, 0.37);
@@ -610,7 +611,9 @@ body::-webkit-scrollbar-track {
 }
 
 .grow-biz .avatarSpace .avatars .img .icons {
-    z-index: 4;
+    position: absolute;
+    z-index: 2;
+    color: red;
 }
 
 .grow-biz .avatarSpace .avatars .credentials {
