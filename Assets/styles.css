@@ -379,6 +379,8 @@ body {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
+    background-color: rgba(255, 255, 0, 0.089);
+    text-decoration: underline;
 }
 .company-news .sec2{
     width: 100%;
@@ -387,12 +389,36 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    background-color: rgba(255, 255, 0, 0.13);
+    background-color: rgba(255, 255, 0, 0.089);
     /* overflow: auto; */
     overflow-x: scroll;
     white-space: nowrap;
     /* display: inline-flex; */
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
+
+/* Customize the Sec2 scrollbar */
+
+.company-news .sec2::-webkit-scrollbar {
+    height: 10px;
+}
+
+.company-news .sec2::-webkit-scrollbar-thumb {
+    background-color:rgba(0, 0, 0, 0.555);
+    border-radius: 10px;
+}
+
+.company-news .sec2::-webkit-scrollbar-thumb:hover {
+    background-color:rgba(0, 0, 0, 0.712);
+}
+
+.company-news .sec2::-webkit-scrollbar-track {
+    background-color: rgba(180, 164, 164, 0.301);
+    border-radius: 10px;
+}
+
+/* End of Sec2 scrollbar customization */
 
 .company-news .sec2 .newsportal{
     height: 100%;
@@ -401,7 +427,7 @@ body {
     border: 1px solid black;
     padding: 10px 10px;
     border-radius: 10px;
-    box-shadow: -6px 4px 8px rgba(145, 8, 8, 0.589);
+    box-shadow: 6px 5px 18px rgba(24, 2, 2, 0.87);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -409,21 +435,62 @@ body {
 }
 
 .newsportal .heading{
-    height: 15%;
-    width: 100%;
-}
-
-.newsportal #date {
     height: 10%;
     width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsportal .date {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .newsportal .content {
-    height: 75%;
-    width: 250px;
+    height: 80%;
+    width: 100%;
+    white-space: normal;
     overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+/* Edit the scrollbar */
+
+.newsportal .content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.newsportal .content::-webkit-scrollbar-thumb {
+    background-color: rgb(61, 26, 26);
+    border-radius: 10px;
+}
+
+.newsportal .content::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(185, 143, 143);
+}
+
+.newsportal .content::-webkit-scrollbar-track {
+    background-color: rgba(185, 50, 50, 0.781);
+    border-radius: 10px;
+}
+
+.newsportal .content p {
+    margin-block: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 .grow-biz {
     width: 100%;
