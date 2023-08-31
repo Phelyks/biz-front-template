@@ -11,6 +11,24 @@ body {
     background-color: white;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #e0b6b6;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+}
+
 /* ******** Navigation Block ************** */
 
 .navbar{
@@ -394,7 +412,7 @@ body {
     overflow-x: scroll;
     white-space: nowrap;
     /* display: inline-flex; */
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 10px;
 }
 
@@ -416,6 +434,7 @@ body {
 .company-news .sec2::-webkit-scrollbar-track {
     background-color: rgba(180, 164, 164, 0.301);
     border-radius: 10px;
+    margin-inline: 15px;
 }
 
 /* End of Sec2 scrollbar customization */
@@ -436,6 +455,7 @@ body {
 
 .newsportal .heading{
     height: 10%;
+    color: rgba(0, 0, 0, 0.705);
     width: 100%;
     border-bottom: 1px solid black;
     display: flex;
@@ -453,6 +473,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    text-decoration: dashed;
+    font-size: 14px;
+    font-style: italic;
     
 }
 
@@ -467,7 +492,7 @@ body {
     align-items: flex-start;
 }
 
-/* Edit the scrollbar */
+/* Edit the News Content scrollbar */
 
 .newsportal .content::-webkit-scrollbar {
     width: 8px;
@@ -483,8 +508,10 @@ body {
 }
 
 .newsportal .content::-webkit-scrollbar-track {
-    background-color: rgba(185, 50, 50, 0.781);
+    background-color: rgba(168, 62, 62, 0.377);
     border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(168, 62, 62, 0.377);
+    margin-block: 10px;
 }
 
 .newsportal .content p {
