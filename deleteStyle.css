@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 5px;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #33333377;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #242222c5;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgba(128, 128, 128, 0.384);
+    border-radius: 10px;
+    margin-block: 5px;
+    margin-inline: 0px;
+}
+
+/* ******** Navigation Block ************** */
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .bizLogo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.navbar .bizLogo img {
+    width: 200px;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.navbar .navigation {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar .navigation ul.navList{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navigation ul.navList .navItems {
+    display: inline-block;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.288);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar .navigation ul.navList .navItems:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-shadow: 6px 4px 3px grey;
+}
+
+.navbar .hamburger {
+    height: 100%;
+    width: 20%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.navbar .hamburger .bar {
+    background-color: black;
+    width: 40px;
+    height: 5px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+/* Media Screans Max-Width:1094px */
+@media(max-width:1094px){
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        padding: 5px;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+    }
+    
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: #33333377;
+        border-radius: 10px;
+    }
+    
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: #242222c5;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background-color: rgba(128, 128, 128, 0.384);
+        border-radius: 10px;
+        margin-block: 5px;
+        margin-inline: 0px;
+    }
+    
+    /* ******** Navigation Block ************** */
+    
+    .navbar{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.116);
+    }
+    
+    .navbar .bizLogo{
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    
+    }
+    
+    .navbar .bizLogo img {
+        width: 200px;
+        padding: 10px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .navbar .navigation {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .navbar .navigation ul.navList{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navbar .navigation ul.navList .navItems {
+        display: inline-block;
+        padding: 0px 30px;
+        text-transform: uppercase;
+        text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.288);
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .navbar .navigation ul.navList .navItems:hover {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        text-shadow: 6px 4px 3px grey;
+    }
+    
+    .navbar .hamburger {
+        height: 100%;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    .navbar .hamburger .bar {
+        background-color: black;
+        width: 40px;
+        height: 5px;
+        margin: 2px;
+        border-radius: 20px;
+    }
+}

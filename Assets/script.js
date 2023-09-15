@@ -32,3 +32,5 @@ document.getElementById("date4").innerHTML = day4 + "-" + month4 + "-" + year;
 let month5 = months[date.getMonth() - 5];
 let day5 = date.getDate() -5;
 document.getElementById("date5").innerHTML = day5 + "-" + month5 + "-" + year;
+
+document.getElementById('year').innerHTML = year;
