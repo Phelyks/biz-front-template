@@ -896,9 +896,8 @@ footer .bx {
     }
     
     .about-us {
-        border: 2px solid red;
         width: 100%;
-        height: 850px;
+        height: 750px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -907,9 +906,8 @@ footer .bx {
     }
     
     .about-us .text{
-        border: 2px solid green;
         width: 100%;
-        height: 500px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -917,9 +915,8 @@ footer .bx {
     }
     
     .about-us .text .div1{
-        border: 1px solid blue;
         width: 100%;
-        height: 40px;
+        height: 30px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -928,18 +925,18 @@ footer .bx {
     }
     .about-us .text .div2{
         width: 100%;
-        height: 15%;
+        height: 45px;
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 0px 10px;
-        font-size: 30px;
+        font-size: 25px;
         color: rgba(0, 0, 0, 0.685);
     }
     .about-us .text .div3{
         padding: 0px 10px;
         width: 100%;
-        height: 50%;
+        height: 250px;
     }
     
     .about-us .text .div3 p {
@@ -947,37 +944,28 @@ footer .bx {
     }
     .about-us .text .div4{
         width: 100%;
-        height: 20%;
+        height: 60px;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        /* justify-content: center; */
-        padding: 0px 10px;
+        flex-direction: row;
+        align-items: center;
     }
     
     .about-us .text .div4 p {
         background: rgba(0, 0, 0, 0.815);
         color: rgba(255, 255, 255, 0.719);
-        padding: 10px 30px;
+        padding: 10px 20px;
         font-size: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         box-shadow: 6px 6px 9px black;
-        margin-left: 90px;
+        margin-left: 190px;
         border-radius: 10px;
         cursor: pointer;
     }
     
-    .about-us .text .div4 p:hover {
-        transition: color 0.5ms ease;
-        color: white;
-        font-size: 20px;
-        background: rgba(0, 0, 0, 0.747);
-        box-shadow: 6px 6px 5px black;
-    }
     
     .about-us .pic {
         width: 100%;
-        height: auto;
+        height: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -990,23 +978,24 @@ footer .bx {
 
     .team{
         width: 100%;
-        height: 750px;
+        height: 600px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
         margin-bottom: 10px;
         margin-top: 15px;
-        border: 1px solid black;
     }
     
     .team .lSide{
-        /* height: 400px; */
+        height: 280px;
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        /* border: 1px solid blue; */
+        
     }
     
     .team .lSide .tr1{
@@ -1030,7 +1019,7 @@ footer .bx {
     }
     .team .lSide .tr3{
         width: 100%;
-        height: 100px;
+        height: 130px;
         padding: 0px 10px;
     }
     
@@ -1071,11 +1060,10 @@ footer .bx {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* border: 1px solid black; */
     }
     
     .team .rSide img {
-        width: 70%;
+        width: 60%;
     }
     
     .company-news{
@@ -1090,7 +1078,7 @@ footer .bx {
     
     .company-news .sec1{
         width: 100%;
-        height: 15%;
+        height: 55px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -1104,16 +1092,14 @@ footer .bx {
     }
     .company-news .sec2{
         width: 100%;
-        height: 100%;
+        height: 800px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         background-color: rgba(255, 255, 0, 0.089);
-        /* overflow: auto; */
         overflow-x: scroll;
         white-space: nowrap;
-        /* display: inline-flex; */
         padding-bottom: 15px;
         padding-top: 10px;
     }
@@ -1142,9 +1128,9 @@ footer .bx {
     /* End of Sec2 scrollbar customization */
     
     .company-news .sec2 .newsportal{
-        height: 100%;
+        height: 420px;
         width: 100%;
-        margin: 0px 40px;
+        margin: 0px 20px;
         border: 1px solid black;
         padding: 10px 10px;
         border-radius: 10px;
@@ -1152,22 +1138,23 @@ footer .bx {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
     
     .newsportal .heading{
-        height: 10%;
+        height: 25px;
         color: rgba(0, 0, 0, 0.705);
         width: 100%;
         border-bottom: 1px solid black;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
+        font-size: 15px;
     }
     
     .newsportal .date {
-        height: 10%;
+        height: 20px;
         width: 100%;
         text-align: center;
         border-bottom: 1px solid black;
@@ -1226,12 +1213,13 @@ footer .bx {
         height: 400px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        /* border: 1px solid black; */
     }
     
     .grow-biz .mTeam {
-        height: 20%;
+        height: 40px;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -1245,14 +1233,17 @@ footer .bx {
         text-decoration-color: rgba(0, 0, 0, 0.295);
     }
     .grow-biz .avatarSpace {
-        height: 80%;
+        /* border: 1px solid blue; */
+        height: 380px;
         width: 100%;
         /* background-color: yellow; */
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         white-space: nowrap;
+        overflow-y: hidden;
+        overflow-x: scroll;
     }
     
     /* Customize avatarSpace scrollbar */
@@ -1345,6 +1336,7 @@ footer .bx {
         padding: 10px 70px;
         color: rgba(10, 2, 2, 0);
         text-shadow: 3px -3px 1px black;
+        display: none;
     }
     
     .grow-biz .avatarSpace .avatars .img .icons .bx:hover {
@@ -1366,14 +1358,18 @@ footer .bx {
     
     footer{
         width: 100%;
-        height: 70px;
+        height: 80px;
         border-top: 1px solid rgba(0, 0, 0, 0.5);
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 5%;
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    footer #names{
+        font-size: 15px;
     }
     
     footer .bx {
