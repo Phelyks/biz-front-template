@@ -1,36 +1,46 @@
-// Date JS Below
+function displayDates(){
+    let today = new Date();
+    let options = {year:'numeric',month:'short',day:'numeric'};
+    let formattedDate = today.toLocaleDateString(undefined,options);
 
-let date = new Date();
-let year = date.getFullYear()
+    // For today's Date
+    document.getElementById('today').innerHTML = formattedDate;
+    
 
-let months = ["Jan","Feb","March","April","May","Jun","July","Aug","Sept","OCt","Nov","Dec"]
+    // For minus 7's date *******************************************
+    let minus7 = new Date(today);
+    minus7.setDate(today.getDate() - 7);
+    let today7 = minus7.toLocaleDateString(undefined,options);
 
-let month = months[date.getMonth()]
+    document.getElementById('today7').innerHTML = today7;
 
-let day = date.getDate()
+    // For minus 14's date *********************************************
+    let minus14 = new Date(today);
+    minus14.setDate(today.getDate() - 14);
+    let today14 = minus14.toLocaleDateString(undefined,options);
 
+    document.getElementById('today14').innerHTML = today14;
 
-document.getElementById("date").innerHTML = day + "-" + month + "-" + year;
+    // For minus 21's date ********************************************
+    let minus21 = new Date(today);
+    minus21.setDate(today.getDate()-21);
+    let today21 = minus21.toLocaleDateString(undefined,options);
 
-let month1 = months[date.getMonth() - 1];
-let day1 = date.getDate() -7;
-document.getElementById("date1").innerHTML = day1 + "-" + month1 + "-" + year;
+    document.getElementById('today21').innerHTML = today21;
 
-let month2 = months[date.getMonth() - 2];
-let day2 = date.getDate() -16;
-document.getElementById("date2").innerHTML = day2 + "-" + month2 + "-" + year;
+    // For minus 28's date *******************************************
+    let minus28 = new Date(today);
+    minus28.setDate(today.getDate() - 28);
+    let today28 = minus28.toLocaleDateString(undefined,options);
 
+    document.getElementById('today28').innerHTML = today28;
 
-let month3 = months[date.getMonth() - 3];
-let day3 = date.getDate() -4;
-document.getElementById("date3").innerHTML = day3 + "-" + month3 + "-" + year;
+    // For minus 35's date *****************************************
+    let minus35 = new Date(today);
+    minus35.setDate(today.getDate()-35);
+    let today35 = minus35.toLocaleDateString(undefined,options);
 
-let month4 = months[date.getMonth() - 4];
-let day4 = date.getDate() -2;
-document.getElementById("date4").innerHTML = day4 + "-" + month4 + "-" + year;
+    document.getElementById('today35').innerHTML = today35;
+}
 
-let month5 = months[date.getMonth() - 5];
-let day5 = date.getDate() -5;
-document.getElementById("date5").innerHTML = day5 + "-" + month5 + "-" + year;
-
-document.getElementById('year').innerHTML = year;
+displayDates();
